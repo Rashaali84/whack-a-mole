@@ -8,6 +8,7 @@ class Board {
   startTime = 0
 
   constructor(thing, height, width) {
+    debugger;
     this.height = height;
     this.width = width;
     this.thing = thing
@@ -16,6 +17,7 @@ class Board {
   }
 
   populate() {
+    debugger;
     const Thing = this.thing;
     for (let i = 0; i < this.height; i++) {
       const nextRow = [];
@@ -27,6 +29,7 @@ class Board {
   }
 
   renderBoard() {
+    debugger;
     const board = document.createElement('table');
     board.style = 'height: 100vh; width: 100vw;';
 
@@ -52,6 +55,7 @@ class Board {
   }
 
   handleReset(boardContainerEl) {
+    debugger;
     this.things = [];
     this.populate();
     boardContainerEl.innerHTML = '';
@@ -61,6 +65,7 @@ class Board {
   }
 
   render() {
+    debugger;
 
     const container = document.createElement('div');
 
